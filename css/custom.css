@@ -1,0 +1,49 @@
+/* --- 左下角加缪名言 --- */
+.camus-quote {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 30;
+    color: #c37dff;        /* 亮紫色，可自行调整 */
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+    font-size: 1.3rem;     /* 放大字体 */
+    font-style: italic;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.4;
+}
+
+/* 可选：作者单独一行，稍微小一点 */
+.camus-quote .author {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #d9a7ff;
+}
+
+@media (max-width: 768px) {
+    .camus-quote {
+        font-size: 1rem;
+        bottom: 15px;
+        left: 15px;
+    }
+    .camus-quote .author {
+        font-size: 0.7rem;
+    }
+}
+
+/* 强制隐藏任何位置的 site-title */
+#site-title,
+.site-title,
+h1#site-title,
+#page-header #site-title,
+.home #site-title {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
